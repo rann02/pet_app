@@ -1,0 +1,123 @@
+.home-hero {
+  background-color: #ede6e3;
+  position: relative;
+  .cover {
+    background-color: black;
+    width: 100vw;
+    height: 37vw;
+    position: absolute;
+    opacity: 0.3;
+  }
+  .hero {
+    width: 100vw;
+    height: 37vw;
+    object-fit: cover;
+  }
+  .text {
+    position: absolute;
+    top: 15vw;
+    left: 8vw;
+    color: white;
+  }
+}
+
+.services {
+  display: flex;
+  flex-direction: row;
+  gap: 80px;
+  padding: 0 8vw 0 8vw;
+  background-color: #ede6e3;
+  height: 12vw;
+  align-items: center;
+  justify-content: space-evenly;
+
+  div {
+    text-align: center;
+    width: 20vw;
+    p {
+      text-align: center;
+      margin-bottom: 10px;
+    }
+    button {
+      padding: 1em 2em 1em 2em;
+      color: white;
+      border-radius: 12px;
+      width: 150px;
+      border: 0;
+      cursor: pointer;
+    }
+    .lost {
+      background-color: #f06449;
+    }
+    .found {
+      background-color: #5bc3eb;
+    }
+    .map {
+      background-color: #3f2f29;
+    }
+  }
+}
+
+.whoweare {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 50px;
+
+  .container {
+    display: grid;
+    grid-template-columns: repeat(3, 50vh);
+    padding: 0 8vw 0 8vw;
+    grid-template-rows: repeat(2, 200px);
+    grid-gap: 20px;
+
+    div {
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 10px;
+      gap: 5px;
+    }
+  }
+}
+
+.article {
+  padding: 0 8vw 0 8vw;
+  display: flex;
+  div {
+    width: 50%;
+    height: 30vw;
+  }
+  .image {
+    background-size: cover;
+    background-image: url("https://images.unsplash.com/photo-1513360371669-4adf3dd7dff8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fHBldCUyMGElMjBjYXR8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=900&q=60");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .content {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+
+    p {
+      font-family: "Merriweather", serif;
+      font-size: 16px;
+      line-height: 26px;
+      word-wrap: break-word;
+      overflow-wrap: break-word;
+      hyphens: auto;
+    }
+
+    a {
+      position: absolute;
+      right: 30px;
+      bottom: 30px;
+      text-decoration: underline;
+      cursor: pointer;
+      color: blue;
+    }
+  }
+}
